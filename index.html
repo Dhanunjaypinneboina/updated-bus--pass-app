@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>General Bus Pass application</h1>
+    <form action="">
+        <fieldset>
+            <legend>Application</legend>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="username" pattern="[a-zA-Z]{8,16}" title="username name should be more than 8 char and less than 16 char" required>
+    
+                <label for="fathername">father's / Gurdien's Name </label>
+                <input type="text" name="fathername" id="fathername" placeholder="father name" pattern="[a-zA-Z0-9]{8,16}" title="father / Gurdien's name should be greate than 8 char and less than 16 char" required>
+            
+            <br>
+
+           <label for="birth">Date of Birth</label>
+           <input  name="name" id="birth" placeholder="date" pattern="(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0,1,2])\/(19|20)\d{2}" required title="the date should be match DD/MM/YYYY Format">
+
+           <label>gender</label>
+           <input type="radio" name="gender" id="male">
+           <label for="male">male</label>
+           <input type="radio" name="gender" id="female">
+           <label for="female">female</label>
+           <br>
+
+           <label for="date">Age as on</label>
+           <input type="date" name="" id="date">
+
+           <label for="aadhar" >Aadhaar No.</label>
+           <input type="number" name="aadhar" id="aadhar" placeholder="Aadhar Number" pattern="[0-9]{16}" title="Aadhaar number should be 16 numbers" required>
+           <br>
+
+        <label for="mobile">Mobile Number</label>
+        <input type="number" name="mobile" id="mobile" required placeholder="contact number" pattern="[0-9]{10}" title="contact number should be 10 digits">
+
+        <label for="mail">Email</label>
+        <input type="text" name="mail" id="mail" required placeholder="email" pattern="[a-z@0-9]" title="Email should match Example@gmail.com">
+
+        <br>
+        <label for="pic">photo</label>
+        <input type="file" name="pic" id="pic">
+        </fieldset>
+        <fieldset>
+            <legend>Residential Address Details</legend>
+            <label for="Address">Application Address</label>
+            <textarea name="" id="Address" required placeholder="Address" minlength="10" maxlength="20"></textarea>
+        
+            <label for="dist">District</label>
+            <select name="" id="dist">
+                <option value="">Hyderabad</option>
+                <option value="">Vijayawa</option>
+                <option value="">Delhi</option>
+            </select>
+
+            <br>
+            <label for="">Mandal</label>
+            <select name="" id="dist">
+                <option value="">Hyderabad</option>
+                <option value="">Vijayawa</option>
+                <option value="">Delhi</option>
+            </select>
+
+            <label for="">village</label>
+            <select name="" id="dist">
+                <option value="">Hyderabad</option>
+                <option value="">Vijayawa</option>
+                <option value="">Delhi</option>
+            </select>
+
+            <label for="Pincode">Pincode</label>
+            <input type="number" name="Pincode" id="Pincode" required title="should be 6 digits" pattern="[0-6]{6}">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Pass type Details</legend>
+            <label for="">city</label>
+            <select name="" id="dist">
+                <option value="">Hyderabad</option>
+                <option value="">Vijayawa</option>
+                <option value="">Delhi</option>
+            </select>
+             <br>
+             <label for="">Pass Type</label>
+             <select name="" id="dist">
+                 <option value="">Hyderabad</option>
+                 <option value="">Vijayawa</option>
+             </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mode of Payment & Pass collection</legend>
+            <Label>Payment Mode</Label>
+            <select name="" id="" >
+                <option value="" selected disabled >select payment mode</option>
+                <option value="">BANK</option>
+                <option value="">UPI</option>
+            </select>
+<br>
+            <label for="">Pass delivery Mode</label>
+            <select name="" id="" >
+                <option value="" selected disabled >---------Select---------</option>
+                <option value="">BANK</option>
+                <option value="">UPI</option>
+            </select>
+            <br>
+        <label for="">content at witch you want to collect pass</label>
+        <select name="" id="" >
+            <option value="" selected disabled >---------Select---------</option>
+
+            <option value="">BANK</option>
+            <option value="">UPI</option>
+        </select>
+        </fieldset>
+        <input type="submit" name="" id="">
+    </form>
+
+
+    <!-- <form action="">
+        <input type="text" name="" id="" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required>
+        <input type="submit" name="" id="">
+    </form> -->
+    
+</body>
+</html>
